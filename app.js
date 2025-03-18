@@ -21,10 +21,31 @@ function adicionarAmigo() {
   // Limpar o campo de entrada
   inputAmigo.value = '';
   
- console.log(listaDeAmigos);
+  // Atualizar a lista visível
+  atualizarListaVisivel();
+
+  console.log(listaDeAmigos);
+
 
   // Coloca o foco no campo de entrada
   inputAmigo.focus();
    
 
+}
+
+function atualizarListaVisivel() {
+  const listaAmigosElement = document.getElementById('listaAmigos');
+  
+  // Limpar a lista atual
+  listaAmigosElement.innerHTML = '';
+  
+  // Adicionar cada amigo como um item da lista
+  listaDeAmigos.forEach((amigo) => {
+      const li = document.createElement('li');
+      li.textContent = amigo;
+      listaAmigosElement.appendChild(li);
+  });
+  
+  // Limpar o resultado anterior, se existir
+  document.getElementById('resultado').innerHTML = '';
 }

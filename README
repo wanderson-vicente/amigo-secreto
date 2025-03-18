@@ -1,0 +1,63 @@
+# 🎁 Amigo Secreto
+
+Uma aplicação web simples e intuitiva para organizar sorteios de amigo secreto entre amigos, família ou colegas de trabalho.
+
+![Tela inicial da aplicação](https://github.com/wanderson-vicente/amigo-secreto/raw/main/screenshots/tela-inicial.png)
+
+## 📋 Sobre o projeto
+
+Esta aplicação permite que os usuários adicionem nomes de participantes para um sorteio de amigo secreto. Com uma interface amigável, é possível:
+
+- Adicionar participantes à lista
+- Remover participantes individualmente
+- Realizar o sorteio aleatório
+
+O projeto foi desenvolvido utilizando HTML, CSS e JavaScript puros, com foco em práticas de lógica de programação como arrays, condicionais e manipulação do DOM.
+
+## 🚀 Funcionalidades
+
+### Adicionar Participantes
+Digite o nome de cada pessoa no campo de texto e clique em "Adicionar" ou pressione Enter para incluí-la na lista de participantes.
+
+### Gerenciar Lista
+Visualize todos os participantes adicionados e remova qualquer um deles facilmente com o botão ❌.
+
+### Realizar Sorteio
+Quando sua lista estiver completa (mínimo de 4 participantes), clique no botão "Sortear amigo" para escolher aleatoriamente um nome da lista.
+
+![Tela de sorteio](https://github.com/wanderson-vicente/amigo-secreto/raw/main/screenshots/resultado-sorteio.png)
+
+## 💻 Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🔍 Conceitos demonstrados
+
+- Manipulação de arrays em JavaScript
+- Uso de condicionais (if/else)
+- Funções e eventos
+- Manipulação do DOM
+- Estilização com CSS
+- Validação de formulários simples
+- Geração de números aleatórios
+
+## 🛠️ Como usar
+
+1. Clone este repositório:
+```bash
+git clone https://github.com/seu-usuario/amigo-secreto.git
+```
+
+2. Abra o arquivo `index.html` em seu navegador preferido
+
+3. Comece a adicionar os nomes dos participantes!
+
+## 📱 Responsividade
+
+A aplicação foi desenvolvida com design responsivo, adaptando-se a diferentes tamanhos de tela, desde smartphones até desktops.
+
+---
+
+⭐ Desenvolvido para praticar conceitos de lógica de programação

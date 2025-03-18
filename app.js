@@ -67,3 +67,10 @@ function sortearAmigo() {
   const resultadoElement = document.getElementById('resultado');
   resultadoElement.innerHTML = `🎉 ${amigoSorteado} 🎉`;
 }
+
+// Adicionar event listener para permitir adicionar informação com a tecla Enter
+document.getElementById('amigo').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+      adicionarAmigo();
+  }
+});

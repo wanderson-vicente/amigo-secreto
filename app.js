@@ -7,12 +7,24 @@ function adicionarAmigo() {
   // Obter o valor do campo de entrada
   const inputAmigo = document.getElementById('amigo');
   const nomeAmigo = inputAmigo.value.trim();
+
+  // Validar se o campo está vazio
+  if (nomeAmigo === '') {
+    alert('Por favor, insira um nome válido!');
+    return;
+  }
   
   
   // Adicionar o nome à lista
   listaDeAmigos.push(nomeAmigo);
+
+  // Limpar o campo de entrada
+  inputAmigo.value = '';
   
  console.log(listaDeAmigos);
+
+  // Coloca o foco no campo de entrada
+  inputAmigo.focus();
    
 
 }

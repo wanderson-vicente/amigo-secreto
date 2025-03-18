@@ -40,11 +40,22 @@ function atualizarListaVisivel() {
   listaAmigosElement.innerHTML = '';
   
   // Adicionar cada amigo como um item da lista
-  listaDeAmigos.forEach((amigo) => {
-      const li = document.createElement('li');
-      li.textContent = amigo;
-      listaAmigosElement.appendChild(li);
+  listaDeAmigos.forEach((amigo, index) => {
+    const li = document.createElement('li');
+    li.textContent = amigo + " ";
+    
+    // Adicionar botão de exclusão simples
+    const btnExcluir = document.createElement('button');
+    btnExcluir.textContent = 'X';
+    btnExcluir.onclick = function() {
+        listaDeAmigos.splice(index, 1);
+        atualizarListaVisivel();
+    };
+    
+    li.appendChild(btnExcluir);
+    listaAmigosElement.appendChild(li);
   });
+  
   
   // Limpar o resultado anterior, se existir
   document.getElementById('resultado').innerHTML = '';

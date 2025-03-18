@@ -49,3 +49,21 @@ function atualizarListaVisivel() {
   // Limpar o resultado anterior, se existir
   document.getElementById('resultado').innerHTML = '';
 }
+
+function sortearAmigo() {
+  // Verificar se há pelo menos 4 pessoas na lista
+  if (listaDeAmigos.length < 4) {
+      alert('É necessário no mínimo 4 pessoas para o sorteio.');
+      return;
+  }
+  
+  // Gerar um índice aleatório
+  const indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
+  
+  // Obter o amigo sorteado
+  const amigoSorteado = listaDeAmigos[indiceAleatorio];
+  
+  // Exibir o resultado
+  const resultadoElement = document.getElementById('resultado');
+  resultadoElement.innerHTML = `🎉 ${amigoSorteado} 🎉`;
+}

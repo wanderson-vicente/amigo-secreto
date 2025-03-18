@@ -47,6 +47,9 @@ function atualizarListaVisivel() {
     // Adicionar botão de exclusão simples
     const btnExcluir = document.createElement('button');
     btnExcluir.textContent = 'X';
+    btnExcluir.style.marginLeft = '10px';
+    btnExcluir.style.border = 'none';
+    btnExcluir.style.color = '#fe652b';
     btnExcluir.onclick = function() {
         listaDeAmigos.splice(index, 1);
         atualizarListaVisivel();

@@ -44,12 +44,16 @@ function atualizarListaVisivel() {
     const li = document.createElement('li');
     li.textContent = amigo + " ";
     
-    // Adicionar botão de exclusão simples
+    // Adicionar botão de exclusão com estilização
     const btnExcluir = document.createElement('button');
     btnExcluir.textContent = 'X';
     btnExcluir.style.marginLeft = '10px';
     btnExcluir.style.border = 'none';
-    btnExcluir.style.color = '#fe652b';
+    btnExcluir.style.color = '#FFFFFF';
+    btnExcluir.style.backgroundColor = '#fe652b';
+    btnExcluir.style.borderRadius = '50%';
+    btnExcluir.style.cursor = 'pointer';
+    btnExcluir.style.padding = '2px 6px';
     btnExcluir.onclick = function() {
         listaDeAmigos.splice(index, 1);
         atualizarListaVisivel();

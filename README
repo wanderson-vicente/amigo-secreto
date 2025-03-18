@@ -2,7 +2,6 @@
 
 Uma aplicação web simples e intuitiva para organizar sorteios de amigo secreto entre amigos, família ou colegas de trabalho.
 
-![Tela inicial da aplicação](https://github.com/wanderson-vicente/amigo-secreto/raw/main/screenshots/tela-inicial.png)
 
 ## 📋 Sobre o projeto
 
@@ -25,7 +24,6 @@ Visualize todos os participantes adicionados e remova qualquer um deles facilmen
 ### Realizar Sorteio
 Quando sua lista estiver completa (mínimo de 4 participantes), clique no botão "Sortear amigo" para escolher aleatoriamente um nome da lista.
 
-![Tela de sorteio](https://github.com/wanderson-vicente/amigo-secreto/raw/main/screenshots/resultado-sorteio.png)
 
 ## 💻 Tecnologias utilizadas
 
